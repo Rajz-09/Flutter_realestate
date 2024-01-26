@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate/house_widget.dart';
 
 class Location extends StatelessWidget {
   List<String> PropertyType = ["Home", "Apartment", "Villa", "Commercial"];
@@ -164,10 +165,12 @@ class Location extends StatelessWidget {
                   children:[
                     Text(
                       "Nearby Places",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                     ),
                   ],
                 ),
+                SizedBox(height:10),
+                HouseWidget(),
             ],
             ),
           ),
